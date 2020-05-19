@@ -15,12 +15,7 @@ a{
 	text-decoration: none;
 	
 }
-ul,
-li{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
+
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -33,6 +28,10 @@ body{
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+
+h2{
+	font-size: 36px;
 }
 //----------------------------------Start Header---------------------------------------
 .header {	
@@ -52,8 +51,12 @@ body{
 			height: 150px;
 			font-family: 'icomoon', sans-serif;
 			position: relative;
+
 			a{
 				color: $header;
+				width: 242px;
+			    height: 150px;
+			    font-size: 150px;
 			}
 			&-name{
 				position: absolute;
@@ -82,7 +85,11 @@ body{
 			
 		}
 		&__menu {
-
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
 		}
 		&__menu-item{
 			display: inline-block;
@@ -131,6 +138,9 @@ body{
 	.item6{
 		background-image: url('../images/slider/slider6.jpg');
 	}
+	.item7{
+		background-image: url('../images/slider/slider7.jpg');
+	}
 	 .slick-arrow{
 		font-size: 0;
 		border: none;
@@ -142,9 +152,7 @@ body{
 		background-position: center;
 		z-index: 20;
 		background-color: transparent;
-		svg path{
-			fill:#fff;
-		}
+		outline: none;
 	}
 	.slick-prev{
 		left: 20px;
@@ -156,3 +164,230 @@ body{
 	}
 }
 //----------------------------------End Slider---------------------------------------
+//----------------------------------Start About---------------------------------------
+
+.about {
+	margin: 100px 0;
+	&__title {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	&__text {
+	}
+	&__advantages {
+		
+	}
+	&__area {
+	}
+}
+//----------------------------------End About---------------------------------------
+//----------------------------------Start Services---------------------------------------
+
+.services {
+	background-image: url('../images/content/services-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px 0;
+	&__title {
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__desc {
+		margin-bottom: 100px;
+		color: #fff;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+
+	}
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__item {
+		max-width: 325px;
+		width: 100%;
+		background-color: #fff;
+		margin-bottom: 50px;
+		padding-top: 20px;
+	}
+	&__item-icon {
+		width: 100%;
+		height: 70px;
+		font-family: 'icomoon', sans-serif;
+		font-size: 40px;
+		display: flex;
+		justify-content: center;
+  		align-items: center;
+	}
+	&__item-name {
+		font-size: 20px;
+		text-align: center;
+		font-weight: 700;
+		//margin-bottom: 30px;
+	}
+	&__item-image {
+		min-height: 250px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+//----------------------------------End Services---------------------------------------
+//----------------------------------Start Automation---------------------------------------
+.automation {
+	margin: 100px 0;
+	&__title {
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__desc {
+		font-size: 28px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__text {
+		line-height: 26px;
+	}
+}
+//----------------------------------End Automation---------------------------------------
+//----------------------------------Start Footer---------------------------------------
+.footer {
+
+	background-image: url('../images/content/footer-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	font-size: 20px;
+	line-height: 28px;
+	padding: 100px 0;
+	.container-footer{
+		max-width: 900px;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__desc {
+		text-align: center;
+		//font-weight: 700;
+		margin-bottom: 100px;
+	}
+	&__contacts {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	&__address {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.icon-map-marker{
+			font-size: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 100px;
+			background-color: #3949ab;
+			border-radius: 50%; 
+			margin-bottom: 35px;
+		}
+	}
+	&__tel {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		a:hover{
+			text-decoration: underline;
+		}
+		.icon-phone{
+			font-size: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 100px;
+			background-color: #3949ab;
+			border-radius: 50%; 
+			margin-bottom: 35px;
+		}
+		a{
+			color: #fff;
+		}
+	}
+	&__mail {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		a:hover{
+			text-decoration: underline;
+		}
+		.icon-envelope-o{
+			font-size: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 100px;
+			background-color: #3949ab;
+			border-radius: 50%; 
+			margin-bottom: 35px;
+		}
+		a{
+			color: #fff;
+		}
+	}
+	&__form {
+		width: 100%;
+		.form__row{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 30px;
+		}
+		input{
+			width: 48%;
+			display:inline-block;
+			border: none;
+			padding: 25px;
+			background-color: #fff;
+			border-radius: 8px;
+			outline: none;
+		}
+		textarea{
+			width: 100%;
+			display: block;
+			border: none;
+			padding: 25px;
+			background-color: #fff;
+			border-radius: 8px;
+			margin-bottom: 30px;
+			height: 200px;
+			outline: none;
+		}
+	}
+	&__form-btn {
+		padding: 25px 85px;
+		background-color: #fff;
+		border-radius: 8px;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__map{
+		width: 100%;
+		
+	}
+}
+//----------------------------------End Footer---------------------------------------
